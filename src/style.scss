@@ -141,11 +141,16 @@ a{
 /* padding */
 
 .fly-padding{
-    padding: 1rem;
+    padding: var(--spacing);
+}
+
+.fly-padding-horizontal{
+	padding-left: var(--spacing);
+    padding-right: var(--spacing);
 }
 
 .fly-padding-top{
-    padding-top: 1rem;
+    padding-top: var(--spacing);
 }
 
 /* margin */

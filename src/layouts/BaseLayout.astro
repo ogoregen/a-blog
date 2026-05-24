@@ -15,13 +15,13 @@ import Footer from '../components/Footer.astro';
 	</head>
 	<body>
 		<main class="fly-container fly-full-height fly-flex fly-flex-column fly-flex-space-between ">
-			<div class="fly-padding">
-				<div class="fly-container fly-width-2-3 fly-margin-horizontal-auto">
-					<Header />
-					<slot />
-				</div>
+			<div class="fly-padding fly-container fly-width-2-3 fly-margin-horizontal-auto">
+				<Header />
+				<slot />
 			</div>
-			<Footer />
+			<div class="fly-padding-horizontal">
+				<Footer />
+			</div>
 		</main>
 	</body>
 </html>
