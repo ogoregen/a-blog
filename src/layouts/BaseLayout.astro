@@ -1,0 +1,27 @@
+---
+import "../style.css";
+import config from "../../site/config.json";
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" href="../../site/favicon.png" />
+		<title>{config.title}</title>
+	</head>
+	<body>
+		<main class="fly-container fly-full-height fly-flex fly-flex-column fly-flex-space-between ">
+			<div class="fly-padding">
+				<div class="fly-container fly-width-2-3 fly-margin-horizontal-auto">
+					<Header />
+					<slot />
+				</div>
+			</div>
+			<Footer />
+		</main>
+	</body>
+</html>

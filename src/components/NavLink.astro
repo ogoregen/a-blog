@@ -1,0 +1,7 @@
+---
+const { path, title } = Astro.props;
+
+const currentPath = Astro.url.pathname.slice(1);
+---
+
+<a href=`/${path}` class={currentPath === path ? 'fly-nav-active' : ''}>{title}</a>

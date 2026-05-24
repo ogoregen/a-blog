@@ -1,0 +1,26 @@
+---
+import { getCollection, getEntry } from 'astro:content';
+import NavLink from './NavLink.astro'
+
+const pages = (await getCollection('pages'));
+const nav = [...pages.map(page => ({path: page.id, title: page.data.title, navIndex: page.data.navIndex}))];
+
+const home = await getEntry('templatePages', 'home');
+const blog = await getEntry('templatePages', 'blog');
+
+if (home && home.body) {
+	nav.push({path: '', title: home.data.title, navIndex: home.data.navIndex});
+}
+
+if (home && home.body || pages.length > 0) {
+	nav.push({path: 'blog', title: blog.data.title, navIndex: blog.data.navIndex});
+}
+
+nav.sort((a, b) => a.navIndex - b.navIndex);
+---
+
+<nav>
+	<ul class="fly-nav">
+		{nav.map(item => <li><NavLink path={item.path} title={item.title} /></li>)}
+	</ul>
+</nav>

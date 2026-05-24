@@ -1,0 +1,10 @@
+---
+import { getEntry, render } from 'astro:content';
+
+const footer = await getEntry('templateComponents', 'header');
+const { Content } = await render(footer);
+---
+
+<header>
+	<Content/>
+</header>
