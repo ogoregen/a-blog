@@ -7,7 +7,7 @@ Renders `.md` or `.mdoc` files into pages and posts.
 
 All site-specific content under `site/`.
 
-Customize header, footer, and blog and home pages with their respective `.mdoc` files in `site/template/`.
+Customize header, footer, and blog and home pages with their respective `.mdoc` files in `site/components/` and `site/pages/`.
 
 Refer to `src/style.scss` for CSS classes available for use in `.mdoc` content.
 

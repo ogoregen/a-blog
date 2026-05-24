@@ -1,7 +1,7 @@
 ---
 import { getEntry, render } from 'astro:content';
 
-const footer = await getEntry('templateComponents', 'footer');
+const footer = await getEntry('components', 'footer');
 const { Content } = await render(footer);
 ---
 

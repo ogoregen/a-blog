@@ -1,17 +1,15 @@
 
 import { defineCollection } from 'astro:content';
-import { glob, file } from 'astro/loaders';
+import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
-
-const pageSchema = z.object({
-  title: z.string(),
-  description: z.string(),
-  navIndex: z.number().optional(),
-});
 
 const pages = defineCollection({
 	loader: glob({ base: './site/pages', pattern: '**/*.{md,mdoc}' }),
-	schema: pageSchema,
+	schema: z.object({
+	  title: z.string(),
+	  description: z.string(),
+	  navIndex: z.number().optional(),
+	}),
 });
 
 const posts = defineCollection({
@@ -27,14 +25,8 @@ const posts = defineCollection({
 	}),
 });
 
-const templateComponents = defineCollection({
-	loader: glob({ base: './site/template/components', pattern: '**/*.mdoc' }),
+const components = defineCollection({
+	loader: glob({ base: './site/components', pattern: '**/*.mdoc' }),
 });
 
-const templatePages = defineCollection({
-	loader: glob({ base: './site/template/pages', pattern: '**/*.mdoc' }),
-	schema: pageSchema,
-});
-
-
-export const collections = { pages, posts, templateComponents, templatePages };
+export const collections = { pages, posts, components };

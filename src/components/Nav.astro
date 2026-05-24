@@ -4,11 +4,14 @@ import NavLink from './NavLink.astro'
 
 const { features } = Astro.props;
 
-const pages = (await getCollection('pages'));
+const pages = (await getCollection('pages', ({ id, data }) => {
+  return id !== 'home' && id !== 'blog';
+}));
+
 const nav = [...pages.map(page => ({path: page.id, title: page.data.title, navIndex: page.data.navIndex}))];
 
-const home = await getEntry('templatePages', 'home');
-const blog = await getEntry('templatePages', 'blog');
+const home = await getEntry('pages', 'home');
+const blog = await getEntry('pages', 'blog');
 
 if (home && home.body) {
 	nav.push({path: '', title: home.data.title, navIndex: home.data.navIndex});
