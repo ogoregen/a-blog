@@ -1,23 +1,23 @@
 {
-  "name": "a-blog",
-  "type": "module",
-  "version": "0.1.0",
-  "engines": {
-    "node": ">=22.12.0"
-  },
-  "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "@astrojs/markdoc": "^1.0.5",
-    "@astrojs/rss": "^4.0.18",
-    "astro": "^6.3.7",
-    "normalize.css": "^8.0.1"
-  },
-  "devDependencies": {
-    "sass-embedded": "^1.100.0"
-  }
+	"name": "a-blog",
+	"type": "module",
+	"version": "0.1.0",
+	"engines": {
+		"node": ">=22.12.0"
+	},
+	"scripts": {
+		"dev": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro"
+	},
+	"dependencies": {
+		"@astrojs/markdoc": "^1.0.5",
+		"@astrojs/rss": "^4.0.18",
+		"astro": "^6.3.7",
+		"normalize.css": "^8.0.1"
+	},
+	"devDependencies": {
+		"sass-embedded": "^1.100.0"
+	}
 }
