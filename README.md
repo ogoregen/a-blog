@@ -9,7 +9,7 @@ All site-specific content under `site/`.
 
 Customize header, footer, and blog and home pages with their respective `.mdoc` files in `site/template/`.
 
-Refer to `src/style.css` for css classes available for use in `.mdoc` content.
+Refer to `src/style.scss` for CSS classes available for use in `.mdoc` content.
 
 ## Setup
 
