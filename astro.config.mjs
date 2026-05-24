@@ -5,6 +5,7 @@ import config from './site/config.json';
 
 export default defineConfig({
   site: config.url,
+  base: config.subdomain,
   markdown: {
     shikiConfig: {
       theme: 'one-light',

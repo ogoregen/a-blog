@@ -1,5 +1,6 @@
 ---
 import { getCollection} from 'astro:content';
+import config from "../../site/config.json";
 
 const { features, postCount } = Astro.props;
 
@@ -12,7 +13,7 @@ if (postCount) posts = posts.slice(0, postCount);
     <div class=`fly-margin-large-bottom ${features}`>
         <div class="fly-flex fly-flex-space-between fly-margin-bottom fly-flex-break-mobile">
             <div class="fly-margin-right">
-				<a href=`/${post.id}` class="fly-text-lead">{post.data.title}</a>
+                <a href=`${config.subdomain}/${post.id}` class="fly-text-lead">{post.data.title}</a>
                 <p class="fly-margin-none">{post.data.description}</p>
             </div>
             <p class="fly-margin-none fly-text-muted" style="flex-shrink: 0">{post.data.date}</p>
