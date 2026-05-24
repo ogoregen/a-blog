@@ -382,6 +382,8 @@ th, td{
 img{
     display: flex;
     margin: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 /* mdoc */
