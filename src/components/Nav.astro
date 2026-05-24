@@ -2,6 +2,8 @@
 import { getCollection, getEntry } from 'astro:content';
 import NavLink from './NavLink.astro'
 
+const { features } = Astro.props;
+
 const pages = (await getCollection('pages'));
 const nav = [...pages.map(page => ({path: page.id, title: page.data.title, navIndex: page.data.navIndex}))];
 
@@ -20,7 +22,7 @@ nav.sort((a, b) => a.navIndex - b.navIndex);
 ---
 
 <nav>
-	<ul class="fly-nav">
+	<ul class=`fly-nav ${features}`>
 		{nav.map(item => <li><NavLink path={item.path} title={item.title} /></li>)}
 	</ul>
 </nav>
