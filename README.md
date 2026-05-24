@@ -3,13 +3,19 @@
 
 Customizable, extensible, complete Astro blog template. In development.
 
-All site-specific content under site/.
+Renders `.md` or `.mdoc` files into pages and posts.
 
-Customize header, footer, and blog and home pages with their respective mdoc files in site/template/.
+All site-specific content under `site/`.
 
-Refer to style.css for css classes available for use in mdoc content.
+Customize header, footer, and blog and home pages with their respective `.mdoc` files in `site/template/`.
 
-### Getting Started
+Refer to `src/style.css` for css classes available for use in `.mdoc` content.
+
+## Setup
+
+Fork or duplicate this repository, update `site/config.json`, and activate GitHub pages for the repository to go live. 
+
+### Local development
 
 ```sh
 npm install
@@ -18,11 +24,11 @@ npm run dev
 
 ## Frontmatter
 
-Description used as meta description.
+`description` used in description meta tag
 
-## Pages
+### Pages
 
-navIndex optional
+`navIndex` optional
 
 ```md
 ---
@@ -32,9 +38,9 @@ navIndex: 1
 ---
 ```
 
-## Blog posts
+### Blog posts
 
-date optional
+`date` optional
 
 ```md
 ---
@@ -45,13 +51,16 @@ date: 23-05-2026
 ```
 
 ## Available Markdoc tags
-```
-{& Block features="a-css-class" %}
-{& /Block %}
 
-{& Blog postCount=10 /%}
+All tags accept CSS class list in `features` attribute.
 
-{& Nav /%}
+```html
+{% Block features="a-css-class" %}
+{% /Block %}
 
-{& NavLink path="foo/bar" title="Bar" /%}
+{% Blog postCount=10 /%} <!-- postCount optional -->
+
+{% Nav /%}
+
+{% NavLink path="foo/bar" title="Bar" /%}
 ```
