@@ -9,6 +9,13 @@ Customize header, footer, and blog and home pages with their respective mdoc fil
 
 Refer to style.css for css classes available for use in mdoc content.
 
+### Getting Started
+
+```sh
+npm install
+npm run dev
+```
+
 ## Frontmatter
 
 Description used as meta description.
