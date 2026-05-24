@@ -12,9 +12,12 @@
     "astro": "astro"
   },
   "dependencies": {
-  	"astro": "^6.3.7",
     "@astrojs/markdoc": "^1.0.5",
     "@astrojs/rss": "^4.0.18",
+    "astro": "^6.3.7",
     "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "sass-embedded": "^1.100.0"
   }
 }
