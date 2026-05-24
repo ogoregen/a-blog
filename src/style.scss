@@ -1,9 +1,10 @@
 
-/* font */
+@use "../site/theme.sass";
 
 @import "normalize.css";
 @import url("https://rsms.me/inter/inter.css");
-@import "../site/theme.sass";
+
+/* font */
 
 :root{
     font-family: 'Inter', sans-serif;
