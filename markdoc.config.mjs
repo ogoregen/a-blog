@@ -26,6 +26,8 @@ export default defineMarkdocConfig({
       render: component('./src/components/NavLink.astro'),
       attributes: {
 				features: { type: String },
+				path: { type: String },
+       	title: { type: String },
       },
     },
   },

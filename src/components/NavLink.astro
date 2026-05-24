@@ -3,7 +3,8 @@ import config from "../../site/config.json";
 
 const { path, title } = Astro.props;
 
-const currentPath = Astro.url.pathname.slice(1);
+let currentPath = Astro.url.pathname.slice(config.subdomain.length);
+
 ---
 
-<a href=`${config.subdomain}/${path}` class={currentPath === path ? 'fly-nav-active' : ''}>{title}</a>
+<a href=`${config.subdomain}/${path}` class={currentPath === '/' + path ? 'fly-nav-active' : ''}>{title}</a>
