@@ -1,0 +1,39 @@
+
+@use "variables.scss" as *;
+
+pre {
+    background-color: $muted-background-color !important;
+    padding: $spacing;
+    border-radius: 0.1rem;
+    scrollbar-width: thin;
+    line-height: 1.25;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid $border-color;
+    margin: $spacing 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: $spacing-small;
+    padding-left: $spacing;
+    padding-right: $spacing;
+    margin: 0;
+    border: 1px solid $border-color;
+}
+
+img {
+    display: flex;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+ul li:not(:last-child) {
+    margin-bottom: $spacing;
+}

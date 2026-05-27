@@ -1,0 +1,161 @@
+
+@use "variables.scss" as *;
+
+/* padding */
+
+.a-padding {
+    padding: $spacing;
+}
+
+.a-padding-horizontal {
+	padding-left: $spacing;
+    padding-right: $spacing;
+}
+
+.a-padding-vertical {
+	padding-top: $spacing;
+    padding-bottom: $spacing;
+}
+
+.a-padding-none {
+    padding: 0;
+}
+
+/* margin */
+
+.a-margin-horizontal-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* none */
+
+.a-margin-none {
+    margin: 0;
+}
+
+.a-margin-none-top {
+    margin-top: 0;
+}
+
+.a-margin-none-bottom {
+    margin-bottom: 0;
+}
+
+.a-margin-none-left {
+    margin-left: 0;
+}
+
+.a-margin-none-right {
+    margin-right: 0;
+}
+
+/* standard */
+
+.a-margin {
+    margin: $spacing;
+}
+
+.a-margin-top {
+    margin-top: $spacing;
+}
+
+.a-margin-bottom {
+    margin-bottom: $spacing;
+}
+
+.a-margin-left {
+    margin-left: $spacing;
+}
+
+.a-margin-right {
+    margin-right: $spacing;
+}
+
+/* small */
+
+.a-margin-small {
+    margin: $spacing-small;
+}
+
+.a-margin-small-top {
+    margin-top: $spacing-small;
+}
+
+.a-margin-small-bottom {
+    margin-bottom: $spacing-small;
+}
+
+.a-margin-small-left {
+    margin-left: $spacing-small;
+}
+
+.a-margin-small-right {
+    margin-right: $spacing-small;
+}
+
+/* xsmall */
+
+.a-margin-xsmall {
+    margin: $spacing-xsmall;
+}
+
+.a-margin-xsmall-top {
+    margin-top: $spacing-xsmall;
+}
+
+.a-margin-xsmall-bottom {
+    margin-bottom: $spacing-xsmall;
+}
+
+.a-margin-xsmall-left {
+    margin-left: $spacing-xsmall;
+}
+
+.a-margin-xsmall-right {
+    margin-right: $spacing-xsmall;
+}
+
+/* large */
+
+.a-margin-large {
+    margin: $spacing-large;
+}
+
+.a-margin-large-top {
+    margin-top: $spacing-large;
+}
+
+.a-margin-large-bottom {
+    margin-bottom: $spacing-large;
+}
+
+.a-margin-large-left {
+    margin-left: $spacing-large;
+}
+
+.a-margin-large-right {
+    margin-right: $spacing-large;
+}
+
+/* xlarge */
+
+.a-margin-xlarge {
+    margin: $spacing-xlarge;
+}
+
+.a-margin-xlarge-top{
+    margin-top: $spacing-xlarge;
+}
+
+.a-margin-xlarge-bottom{
+    margin-bottom: $spacing-xlarge;
+}
+
+.a-margin-xlarge-left {
+    margin-left: $spacing-xlarge;
+}
+
+.a-margin-xlarge-right {
+    margin-right: $spacing-xlarge;
+}

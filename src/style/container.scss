@@ -1,0 +1,15 @@
+
+@mixin container {
+ 	margin-left: auto;
+    margin-right: auto;
+}
+
+.a-container {
+	@include container;
+	max-width: 1200px;
+}
+
+.a-container-small {
+	@include container;
+    max-width: 850px;
+}

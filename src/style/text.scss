@@ -1,0 +1,75 @@
+
+@use "variables.scss" as *;
+
+body {
+    font-family: $font-family;
+    line-height: 1.5;
+}
+
+/* headings */
+
+@mixin heading {
+	font-size: 2rem;
+	font-weight: 900;
+}
+
+h1 {
+	 @include heading;
+}
+
+.a-title {
+
+	@include heading;
+
+    & a:hover {
+        text-decoration: none;
+    }
+}
+
+/* style */
+
+.a-text-muted {
+    color: $muted-foreground-color;
+}
+
+.a-text-lead {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+/* alignment */
+
+.a-text-center {
+    text-align: center;
+}
+
+.a-text-left {
+    text-align: left;
+}
+
+.a-text-right {
+    text-align: right;
+}
+
+/* link */
+
+a {
+
+    text-decoration: none;
+    color: $primary-color;
+
+    &:hover {
+
+        text-decoration: underline;
+    }
+}
+
+.a-link-text {
+
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+        color: $primary-color;
+    }
+}

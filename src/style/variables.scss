@@ -1,0 +1,15 @@
+
+@use "../../site/theme.sass" as theme;
+
+$font-family: theme.$font-family;
+
+$primary-color: theme.$primary-color;
+$border-color: #c8c8c8;
+$muted-foreground-color: dimgray;
+$muted-background-color: whitesmoke;
+
+$spacing: theme.$base-spacing;
+$spacing-small: calc(theme.$base-spacing / 2);
+$spacing-large: calc(theme.$base-spacing * 1.5);
+$spacing-xsmall: calc(theme.$base-spacing / 4);
+$spacing-xlarge: calc(theme.$base-spacing * 1.75);

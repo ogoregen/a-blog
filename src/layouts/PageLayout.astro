@@ -6,10 +6,10 @@ const { title, subtitle } = Astro.props;
 
 <BaseLayout>
 	<div class="">
-		<h1 class="fly-margin-small-bottom a-title">{title}</h1>
-		{subtitle && <div class="fly-text-muted a-subtitle">{subtitle}</div>}
+		<h1 class="a-margin-small-bottom a-title">{title}</h1>
+		{subtitle && <div class="a-text-muted a-post-date">{subtitle}</div>}
 	</div>
-	<div class="fly-margin-large-top">
+	<div class="a-margin-large-top">
 		<slot />
 	</div>
 </BaseLayout>

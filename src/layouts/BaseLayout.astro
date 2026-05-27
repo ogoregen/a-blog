@@ -1,5 +1,5 @@
 ---
-import "../style.scss";
+import "../style/style.scss";
 import config from "../../site/config.json";
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
@@ -14,12 +14,12 @@ import Footer from '../components/Footer.astro';
 		<title>{config.title}</title>
 	</head>
 	<body>
-		<main class="fly-container fly-full-height fly-flex fly-flex-column fly-flex-space-between ">
-			<div class="fly-padding fly-container fly-width-2-3 fly-margin-horizontal-auto">
+		<main class="a-container-small a-full-height a-flex a-flex-column a-flex-space-between">
+			<div class="a-padding">
 				<Header />
 				<slot />
 			</div>
-			<div class="fly-padding-horizontal fly-container fly-width-2-3 fly-margin-horizontal-auto">
+			<div class="a-padding-horizontal a-width-1-1">
 				<Footer />
 			</div>
 		</main>

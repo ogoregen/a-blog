@@ -1,0 +1,73 @@
+
+@use "variables.scss" as *;
+
+/* flex */
+
+.a-flex {
+    display: flex;
+}
+
+.a-flex-column {
+    flex-direction: column;
+}
+
+.a-flex-space-between {
+    justify-content: space-between;
+}
+
+.a-flex-space-around {
+    justify-content: space-around;
+}
+
+.a-flex-center {
+    justify-content: center;
+}
+
+.a-flex-middle {
+    align-items: center;
+}
+
+.a-flex-start {
+    justify-items: start;
+}
+
+.a-flex-end {
+    justify-items: end;
+}
+
+.a-flex-top {
+    align-items: top;
+}
+
+.a-flex-bottom {
+    align-items: bottom;
+}
+
+.a-flex-wrap {
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 768px){
+
+    .a-flex-break-mobile {
+        flex-direction: column;
+    }
+}
+
+/* grid */
+
+.a-grid {
+    display: grid;
+    gap: $spacing;
+}
+
+.a-grid-2 {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+@media only screen and (min-width: 768px){
+
+    .a-grid-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
