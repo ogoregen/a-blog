@@ -5,3 +5,4 @@
 - Fix unstyled flash
 - Fix duplicate blog page when no home
 - Fix favicon not served
+- Add 404 page
