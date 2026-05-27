@@ -4,3 +4,4 @@
 - Allow customizing main width
 - Fix unstyled flash
 - Fix duplicate blog page when no home
+- Fix favicon not served
