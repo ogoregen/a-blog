@@ -1,5 +1,5 @@
 
-[] Add site map
+[X] Add sitemap
 [] Handle 0 post count
 [] Allow customizing main width
 [] Fix unstyled flash

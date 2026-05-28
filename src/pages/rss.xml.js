@@ -1,6 +1,6 @@
 
-import rss from '@astrojs/rss';
 import { getCollection } from 'astro:content';
+import rss from '@astrojs/rss';
 import config from '../../site/config.json';
 
 export async function GET(context) {
@@ -13,9 +13,9 @@ export async function GET(context) {
 		site: context.site,
 		items: posts.map((post) => ({
 			title: post.data.title,
-      description: post.data.description,
-      pubDate: post.data.date,
-      link: `/${post.id}`,
-    })),
+			description: post.data.description,
+			pubDate: post.data.date,
+			link: `/${post.id}`,
+		})),
 	});
 }
