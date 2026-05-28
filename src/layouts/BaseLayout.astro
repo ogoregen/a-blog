@@ -1,6 +1,7 @@
 ---
 import "../style/style.scss";
-import config from "../../site/config.json";
+import favicon from '../../site/favicon.png?Url';
+import config from '../../site/config.json';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 ---
@@ -10,7 +11,7 @@ import Footer from '../components/Footer.astro';
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" href="../../site/favicon.png" />
+		<link rel="icon" href={favicon} />
 		<link rel="sitemap" href="/sitemap-index.xml" />
 		<title>{config.title}</title>
 	</head>
