@@ -18,7 +18,7 @@ if (home && home.body) {
 }
 
 if (home && home.body || pages.length > 0) {
-	nav.push({path: 'blog', title: blog.data.title, navIndex: blog.data.navIndex});
+	nav.push({path: home && home.body ? 'blog' : '', title: blog.data.title, navIndex: blog.data.navIndex});
 }
 
 nav.sort((a, b) => a.navIndex - b.navIndex);
