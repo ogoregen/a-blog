@@ -9,14 +9,15 @@ let posts = (await getCollection('posts'));
 if (postCount) posts = posts.slice(0, postCount);
 ---
 
-{posts.map(post =>
+{posts.length > 0 && posts.map(post =>
     <div class=`a-margin-large-bottom ${features}`>
         <div class="a-flex a-flex-space-between a-margin-bottom a-flex-break-mobile">
             <div class="a-margin-right">
-                <a href=`${config.subdomain}/${post.id}` class="a-text-lead">{post.data.title}</a>
+                <a href=`${config.base}/${post.id}` class="a-text-lead">{post.data.title}</a>
                 <p class="a-margin-none">{post.data.description}</p>
             </div>
             <p class="a-margin-none a-text-muted" style="flex-shrink: 0">{post.data.date}</p>
         </div>
     </div>
 )}
+{posts.length == 0 && <div class="a-text-muted a-text-center">No posts yet</div>}

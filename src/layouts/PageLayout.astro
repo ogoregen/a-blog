@@ -4,7 +4,7 @@ import BaseLayout from './BaseLayout.astro';
 const { title, subtitle } = Astro.props;
 ---
 
-<BaseLayout>
+<BaseLayout title={title}>
 	<div class="">
 		<h1 class="a-margin-small-bottom a-title">{title}</h1>
 		{subtitle && <div class="a-text-muted a-post-date">{subtitle}</div>}
