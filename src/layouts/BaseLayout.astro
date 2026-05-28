@@ -14,14 +14,12 @@ import Footer from '../components/Footer.astro';
 		<title>{config.title}</title>
 	</head>
 	<body>
-		<main class="a-container-small a-full-height a-flex a-flex-column a-flex-space-between">
+		<main class="a-full-height a-container-small a-flex a-flex-column a-flex-space-between">
 			<div class="a-padding">
 				<Header />
 				<slot />
 			</div>
-			<div class="a-padding-horizontal a-width-1-1">
-				<Footer />
-			</div>
+			<Footer />
 		</main>
 	</body>
 </html>
