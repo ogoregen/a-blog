@@ -1,7 +1,5 @@
 ---
 import { getCollection} from 'astro:content';
-import config from "../../site/config.json";
-
 const { features, postCount } = Astro.props;
 
 let posts = (await getCollection('posts'));
@@ -13,7 +11,7 @@ if (postCount) posts = posts.slice(0, postCount);
     <div class=`a-margin-large-bottom ${features}`>
         <div class="a-flex a-flex-space-between a-margin-bottom a-flex-break-mobile">
             <div class="a-margin-right">
-                <a href=`${config.base}/${post.id}` class="a-text-lead">{post.data.title}</a>
+                <a href=`${import.meta.env.BASE_URL}/${post.id}` class="a-text-lead">{post.data.title}</a>
                 <p class="a-margin-none">{post.data.description}</p>
             </div>
             <p class="a-margin-none a-text-muted" style="flex-shrink: 0">{post.data.date}</p>

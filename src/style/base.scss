@@ -2,7 +2,7 @@
 @use "variables.scss" as *;
 
 pre {
-    background-color: $muted-background-color !important;
+    background-color: $muted-background-color;
     padding: $spacing;
     border-radius: 0.1rem;
     scrollbar-width: thin;
