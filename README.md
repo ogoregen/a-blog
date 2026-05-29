@@ -14,6 +14,8 @@ All site-specific content under `site/`.
 - Optional home page: `site/pages/home.mdoc`
 - Header and footer: `site/components/header.mdoc` and `footer.mdoc`
 
+Note: Two posts with the same filename in different folders will collide.
+
 ### Theming
 
 - `site/style.sass` to define custom style (classes added available for use in `.mdoc` content)

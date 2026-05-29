@@ -11,7 +11,7 @@ const nav = [...pages.map(page => ({ path: page.id, title: page.data.title, navI
 
 if (pages.length) {
 	nav.push({path: '', title: home.data.title, navIndex: home.data.navIndex});
-	nav.sort((a, b) => a.navIndex - b.navIndex);
+	nav.sort((a, b) => (a.navIndex ?? Infinity) - (b.navIndex ?? Infinity));
 }
 ---
 

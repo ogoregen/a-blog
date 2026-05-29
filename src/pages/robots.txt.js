@@ -1,6 +1,4 @@
 
-import config from "../../site/config.json";
-
 const getRobotsTxt = (sitemapUrl) => `\
 # As a condition of accessing this website, you agree to abide by the following
 # content signals:
@@ -66,7 +64,7 @@ Sitemap: ${sitemapUrl.href}
 
 export async function GET({ site }) {
 
-	const sitemapUrl = new URL(`${config.base.split('/').filter(Boolean)}/sitemap-index.xml`, site, config.base);
+	const sitemapUrl = new URL(`${import.meta.env.BASE_URL}/sitemap-index.xml`, site);
 	return new Response(getRobotsTxt(sitemapUrl), {
 		headers: {
 			'Content-Type': 'text/plain',

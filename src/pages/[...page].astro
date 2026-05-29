@@ -6,7 +6,7 @@ export async function getStaticPaths() {
 
   const pages = await getCollection('pages');
 
-  return pages.map(page => ({
+  return pages.filter(page => page.id !== 'home').map(page => ({
 	params: { page: page.id },
 	props: { page },
   }));

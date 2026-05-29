@@ -16,7 +16,7 @@ let pageTitle = (title ? title + ' - ' : '') + config.title;
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" href={favicon} />
-		<link rel="sitemap" href="/sitemap-index.xml" />
+		<link rel="sitemap" href={`${import.meta.env.BASE_URL}/sitemap-index.xml`} />
 		<title>{pageTitle}</title>
 	</head>
 	<body>
