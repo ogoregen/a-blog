@@ -61,11 +61,11 @@ date: 23-05-2026
 All tags accept CSS class list in `features` attribute.
 
 ```html
-{% Block features="a-css-class" %}{% /Block %} <!-- base block to apply CSS classes to -->
+{% block features="a-css-class" %}{% /block %} <!-- base block to apply CSS classes to -->
 
-{% Blog postCount=10 /%} <!-- postCount optional -->
+{% blog postCount=10 /%} <!-- postCount optional -->
 
-{% Nav /%} <!-- horizontal list of all pages -->
+{% nav /%} <!-- horizontal list of all pages -->
 
-{% NavLink path="foo/bar" title="Bar" /%} <!-- link primary color when path active -->
+{% navLink path="foo/bar" title="Bar" /%} <!-- link primary color when path active -->
 ```

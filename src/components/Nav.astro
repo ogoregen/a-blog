@@ -16,7 +16,7 @@ if (pages.length) {
 ---
 
 <nav>
-	<ul class=`a-nav ${features}`>
+	<ul class=`a-nav ${features ?? ''}`>
 		{nav.map(item => <li><NavLink path={item.path} title={item.title} /></li>)}
 	</ul>
 </nav>
