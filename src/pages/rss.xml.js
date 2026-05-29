@@ -15,7 +15,7 @@ export async function GET(context) {
 			title: post.data.title,
 			description: post.data.description,
 			pubDate: post.data.date,
-			link: `/${post.id}`,
+			link: `${import.meta.env.BASE_URL}/${post.id}`,
 		})),
 	});
 }
