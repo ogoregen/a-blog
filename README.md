@@ -69,3 +69,8 @@ All tags accept CSS class list in `features` attribute.
 
 {% navLink path="foo/bar" title="Bar" /%} <!-- link primary color when path active -->
 ```
+
+## Showcase
+
+- [erenha.li](https://erenha.li)
+- [ogoregen.com](https://ogoregen.com)
