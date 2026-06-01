@@ -37,3 +37,10 @@ img {
 ul li:not(:last-child) {
     margin-bottom: $spacing;
 }
+
+blockquote {
+	font-size: 1.1rem;
+	font-style: italic;
+	line-height: 1.75;
+	margin: 0;
+}
