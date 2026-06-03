@@ -1,9 +1,9 @@
 ---
 import config from "../../site/config.json";
 
-const { path, title, features } = Astro.props;
+const { path, title } = Astro.props;
 
 let currentPath = Astro.url.pathname.slice(config.base.length);
 ---
 
-<a href=`${config.base}/${path}` class={currentPath === '/' + path ? `a-nav-active ${features ?? ''}` : features}>{title}</a>
+<a href=`${config.base}/${path}` class:list={[currentPath === '/' + path ? 'a-nav-active' : '', Astro.props.class]}>{title}</a>

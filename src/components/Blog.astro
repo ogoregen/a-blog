@@ -1,6 +1,6 @@
 ---
 import { getCollection} from 'astro:content';
-const { features, postCount } = Astro.props;
+const { postCount, hideDescription } = Astro.props;
 
 let posts = (await getCollection('posts')).sort((a, b) => new Date(b.data.date ?? 0) - new Date(a.data.date ?? 0));
 
@@ -8,11 +8,11 @@ if (postCount) posts = posts.slice(0, postCount);
 ---
 
 {posts.length > 0 && posts.map(post =>
-    <div class=`a-margin-large-bottom ${features ?? ''}`>
+    <div class:list={["a-margin-large-bottom", Astro.props.class]}>
         <div class="a-flex a-flex-space-between a-margin-bottom a-flex-break-mobile">
             <div class="a-margin-right">
                 <a href=`${import.meta.env.BASE_URL}/${post.id}` class="a-text-lead">{post.data.title}</a>
-                <p class="a-margin-none">{post.data.description}</p>
+                { !hideDescription && <p class="a-margin-none">{post.data.description}</p> }
             </div>
             <p class="a-margin-none a-text-muted" style="flex-shrink: 0">{post.data.date}</p>
         </div>

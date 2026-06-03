@@ -58,10 +58,8 @@ date: 23-05-2026
 
 ## Available Markdoc tags
 
-All tags accept CSS class list in `features` attribute.
-
 ```html
-{% block features="a-css-class" %}{% /block %} <!-- base block to apply CSS classes to -->
+{% block .a-css-class %}{% /block %} <!-- base block to apply CSS classes to -->
 
 {% blog postCount=10 /%} <!-- postCount optional -->
 

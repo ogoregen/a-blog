@@ -2,8 +2,6 @@
 import { getCollection, getEntry } from 'astro:content';
 import NavLink from './NavLink.astro'
 
-const { features } = Astro.props;
-
 const pages = (await getCollection('pages', ({ id, data }) => { return id !== 'home' }));
 const home = await getEntry('pages', 'home');
 
@@ -15,8 +13,8 @@ if (pages.length) {
 }
 ---
 
-<nav>
-	<ul class=`a-nav ${features ?? ''}`>
+<nav class={Astro.props.class}>
+	<ul class="a-nav">
 		{nav.map(item => <li><NavLink path={item.path} title={item.title} /></li>)}
 	</ul>
 </nav>

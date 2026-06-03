@@ -5,29 +5,22 @@ export default defineMarkdocConfig({
 	tags: {
 		block: {
 			render: component('./src/components/Block.astro'),
+		},
+		nav: {
+			render: component('./src/components/Nav.astro'),
+		},
+		navLink: {
+			render: component('./src/components/NavLink.astro'),
 			attributes: {
-				features: { type: String },
+				path: { type: String },
+				title: { type: String },
 			},
 		},
 		blog: {
 			render: component('./src/components/Blog.astro'),
 			attributes: {
-				features: { type: String },
 				postCount: { type: Number },
-			},
-		},
-		nav: {
-			render: component('./src/components/Nav.astro'),
-			attributes: {
-				features: { type: String },
-			},
-		},
-		navLink: {
-			render: component('./src/components/NavLink.astro'),
-			attributes: {
-				features: { type: String },
-				path: { type: String },
-				title: { type: String },
+				hideDescription: { type: Boolean },
 			},
 		},
 	},
