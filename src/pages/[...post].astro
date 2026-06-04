@@ -7,8 +7,8 @@ export async function getStaticPaths() {
   const posts = await getCollection('posts');
 
   return posts.map(post => ({
-	params: { post: post.id },
-	props: { post },
+    params: { post: post.id },
+    props: { post },
   }));
 }
 
@@ -16,6 +16,6 @@ const { post } = Astro.props;
 const { Content } = await render(post);
 ---
 
-<PageLayout title={post.data.title} subtitle={post.data.date}>
+<PageLayout title={post.data.title} subtitle={post.data.date} description={post.data.description}>
 	<Content />
 </PageLayout>
