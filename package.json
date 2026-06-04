@@ -22,6 +22,6 @@
 		"sass": "^1.100.0"
 	},
 	"optionalDependencies": {
-    	"sass-embedded": "^1.100.0"
+		"sass-embedded": "^1.100.0"
 	}
 }
