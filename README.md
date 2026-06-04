@@ -61,11 +61,11 @@ date: 23-05-2026
 ```html
 {% block .a-css-class %}{% /block %} <!-- base block to apply CSS classes to -->
 
-{% blog postCount=10 /%} <!-- postCount optional -->
+{% blog-posts count=10 show-description=true show-date=true /%} <!-- all attributes optional -->
 
 {% nav /%} <!-- horizontal list of all pages -->
 
-{% navLink path="foo/bar" title="Bar" /%} <!-- link primary color when path active -->
+{% nav-link path="foo/bar" title="Bar" /%} <!-- link primary color when path active -->
 ```
 
 ## Showcase

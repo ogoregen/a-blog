@@ -1,10 +1,13 @@
 ---
 import { getCollection} from 'astro:content';
-const { postCount, hideDescription } = Astro.props;
+
+const count = Astro.props.count;
+const showDescription = Astro.props['show-description'];
+const showDate = Astro.props['show-date'];
 
 let posts = (await getCollection('posts')).sort((a, b) => new Date(b.data.date ?? 0) - new Date(a.data.date ?? 0));
 
-if (postCount) posts = posts.slice(0, postCount);
+if (count) posts = posts.slice(0, count);
 ---
 
 {posts.length > 0 && posts.map(post =>
@@ -12,9 +15,9 @@ if (postCount) posts = posts.slice(0, postCount);
         <div class="a-flex a-flex-space-between a-margin-bottom a-flex-break-mobile">
             <div class="a-margin-right">
                 <a href=`${import.meta.env.BASE_URL}/${post.id}` class="a-text-lead">{post.data.title}</a>
-                { !hideDescription && <p class="a-margin-none">{post.data.description}</p> }
+                { showDescription && <p class="a-margin-none">{post.data.description}</p> }
             </div>
-            <p class="a-margin-none a-text-muted" style="flex-shrink: 0">{post.data.date}</p>
+             { showDate && <p class="a-margin-none a-text-muted" style="flex-shrink: 0">{post.data.date}</p> }
         </div>
     </div>
 )}
