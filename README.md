@@ -52,7 +52,7 @@ nav-index: 1
 ---
 title: Cras quis augue porttitor
 description: Braesent pulvinar leo sagittis ipsum
-date: 23-05-2026
+date: 2026-05-23
 ---
 ```
 

@@ -1,6 +1,6 @@
 ---
-title: "Another Page"
-description: "Another page on A-Blog"
+title: Another Page
+description: Another page on A-Blog
 nav-index: 4
 ---
 

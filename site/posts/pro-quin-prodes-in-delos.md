@@ -1,7 +1,7 @@
 ---
-title: "Pro quin prodes in Delos"
-description: "Pallade alii vestrum marmore Iovis, Troiani."
-date: "2024-10-25"
+title: Pro quin prodes in Delos
+description: Pallade alii vestrum marmore Iovis, Troiani.
+date: 2024-10-25
 ---
 
 ## Ante quorum
