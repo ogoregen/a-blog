@@ -1,7 +1,7 @@
 ---
 title: "Another Page"
 description: "Another page on A-Blog"
-navIndex: 4
+nav-index: 4
 ---
 
 Suspendisse sagittis, lorem non rutrum bibendum, magna mi pharetra libero, ac vulputate tortor diam et nibh. Morbi a orci et tellus bibendum interdum. Morbi scelerisque, velit eu eleifend interdum, erat augue euismod arcu, consectetur iaculis augue magna in nulla. Vestibulum condimentum libero eu ipsum pharetra, in finibus libero lacinia. Fusce non interdum ipsum, sed porttitor leo. Ut eget ligula vitae dolor faucibus venenatis sit amet eu enim. In gravida justo turpis. Morbi a vulputate sapien.

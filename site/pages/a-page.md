@@ -1,7 +1,7 @@
 ---
 title: "A Page"
 description: "A page on A-Blog"
-navIndex: 3
+nav-index: 3
 ---
 
 This is a page.

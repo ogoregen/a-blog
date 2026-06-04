@@ -5,10 +5,10 @@ import NavLink from './NavLink.astro'
 const pages = (await getCollection('pages', ({ id, data }) => { return id !== 'home' }));
 const home = await getEntry('pages', 'home');
 
-const nav = [...pages.map(page => ({ path: page.id, title: page.data.title, navIndex: page.data.navIndex }))];
+const nav = [...pages.map(page => ({ path: page.id, title: page.data.title, navIndex: page.data['nav-index'] }))];
 
 if (pages.length) {
-	nav.push({path: '', title: home.data.title, navIndex: home.data.navIndex});
+	nav.push({path: '', title: home.data.title, navIndex: home.data['nav-index']});
 	nav.sort((a, b) => (a.navIndex ?? Infinity) - (b.navIndex ?? Infinity));
 }
 ---

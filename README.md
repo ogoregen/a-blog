@@ -12,7 +12,7 @@ All site-specific content under `site/`.
 - Blog posts: `site/posts/` (`.mdoc` or `.md`)
 - Pages: `site/pages/` (`.mdoc` or `.md`)
 - Optional home page: `site/pages/home.mdoc`
-- Header and footer: `site/components/header.mdoc` and `footer.mdoc`
+- Header and footer: `header.mdoc` and `footer.mdoc` under `site/components/`
 
 Note: Two posts with the same filename in different folders will collide.
 
@@ -34,13 +34,13 @@ npm run dev
 
 ### Pages
 
-`navIndex` optional, used by `{% Nav /%}` Markdoc tag for ordering pages
+`nav-index` optional, used by `{% nav /%}` Markdoc tag for ordering pages
 
 ```md
 ---
 title: About
 description: Phasellus finibus in elit et suscipit
-navIndex: 1
+nav-index: 1
 ---
 ```
 
