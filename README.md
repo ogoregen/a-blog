@@ -1,7 +1,7 @@
 
 # A-Blog
 
-Customizable, extensible, complete Astro blog template
+Customisable, extensible, complete Astro blog template
 
 ## Setup
 
