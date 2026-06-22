@@ -14,7 +14,7 @@ if (count) posts = posts.slice(0, count);
     <div class:list={["a-margin-large-bottom", Astro.props.class]}>
         <div class="a-flex a-flex-space-between a-margin-bottom a-flex-break-mobile">
             <div class="a-margin-right">
-                <a href=`${import.meta.env.BASE_URL}/${post.id}` class="a-text-lead">{post.data.title}</a>
+                <a href=`${import.meta.env.BASE_URL}${post.id}` class="a-text-lead">{post.data.title}</a>
                 { showDescription && <p class="a-margin-none">{post.data.description}</p> }
             </div>
              { showDate && <p class="a-margin-none a-text-muted" style="flex-shrink: 0">{post.data.date}</p> }
