@@ -27,7 +27,9 @@ let pageTitle = (title ? title + ' - ' : '') + config.title;
 				<Header />
 				<slot />
 			</div>
-			<Footer />
+			<div class="a-padding-horizontal">
+				<Footer />
+			</div>
 		</main>
 	</body>
 </html>
