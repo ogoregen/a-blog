@@ -73,3 +73,10 @@ a {
         color: $primary-color;
     }
 }
+
+/* paragraph style */
+
+.a-hanging-indent p {
+	padding-left: 2em;
+  	text-indent: -2em;
+}
